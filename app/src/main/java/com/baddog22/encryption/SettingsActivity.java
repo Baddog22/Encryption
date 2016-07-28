@@ -19,17 +19,18 @@ public class SettingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-         of        fset= (int)this.getResources().getInteger(R.integer.offset);
+       offset= (int)this.getResources().getInteger(R.integer.offset);
         NumberPicker np = (NumberPicker)findViewById(R.id.numberPicker);
         np.setMaxValue(5);
-        np.setMinValue(0);
+       np.setMinValue(0);
         np.setValue(offset);
 
         np.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
-            @Override
+           @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                 String value = String.valueOf(newVal);
-                Toast.makeText(getApplicationContext(),value, Toast.LENGTH_SHORT).show();
+
+               // Toast.makeText(getApplicationContext(),value, Toast.LENGTH_SHORT).show();
             }
         });
 
