@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.NumberPicker;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 
 public class SettingsActivity extends Activity {
@@ -19,7 +19,7 @@ public class SettingsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-       offset= (int)this.getResources().getInteger(R.integer.offset);
+        offset= (int)this.getResources().getInteger(R.integer.offset);
         NumberPicker np = (NumberPicker)findViewById(R.id.numberPicker);
         np.setMaxValue(5);
        np.setMinValue(0);
