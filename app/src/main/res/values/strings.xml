@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Encryption</string>
+
+    <string name="hello_world">Encryption Offset</string>
+    <string name="action_settings">Settings</string>
+    <string name="input">Input:</string>
+    <string name="password">Password:</string>
+    <string name="button_text">Compute</string>
+    <string name="output">Output:</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <item name="offset" type="integer">0</item>
+
+
+</resources>
